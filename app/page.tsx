@@ -69,11 +69,11 @@ export default function Home() {
                 custom ERP systems, we deliver everything you need to scale.
               </p>
               
-              <div className="mb-12">
+              <div className="mb-12 max-w-4xl mx-auto">
                 <img 
                   src="/images/Social Media.png" 
                   alt="Social Media Marketing" 
-                  className="mx-auto max-w-full h-auto rounded-lg shadow-lg"
+                  className="w-full h-auto rounded-lg shadow-lg object-cover"
                 />
               </div>
 
