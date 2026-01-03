@@ -68,6 +68,14 @@ export default function Home() {
                 Transform your business with integrated marketing and software services. From social media campaigns to
                 custom ERP systems, we deliver everything you need to scale.
               </p>
+              
+              <div className="mb-12">
+                <img 
+                  src="/images/Social Media.png" 
+                  alt="Social Media Marketing" 
+                  className="mx-auto max-w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button
@@ -79,14 +87,6 @@ export default function Home() {
                     Request Demo
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto border-border hover:bg-secondary bg-transparent"
-                  asChild
-                >
-                  <a href="#services">Our Services</a>
                 </Button>
               </div>
             </div>

@@ -103,7 +103,72 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">© 2025 Mida. All rights reserved.</p>
           </div>
           
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-muted-foreground">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="font-semibold mb-4">Product</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link href="#services" className="hover:text-foreground transition-colors">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#pricing" className="hover:text-foreground transition-colors">
+                    Pricing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-foreground transition-colors">
+                    Templates
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link href="#about" className="hover:text-foreground transition-colors">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-foreground transition-colors">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-foreground transition-colors">
+                    Careers
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link href="#" className="hover:text-foreground transition-colors">
+                    Documentation
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-foreground transition-colors">
+                    Help Center
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#contact" className="hover:text-foreground transition-colors">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-muted-foreground border-t border-border pt-8">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
               <span>Addis Ababa, Ethiopia</span>

@@ -45,9 +45,6 @@ export function Header() {
           <Button variant="ghost" className="hidden md:inline-flex" asChild>
             <Link href="/login">Log in</Link>
           </Button>
-          <Button asChild>
-            <Link href="/signup">Get Started</Link>
-          </Button>
         </div>
       </div>
     </header>
