@@ -81,21 +81,6 @@ export function Footer() {
               </ul>
             </div>
           </div>
-          
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-muted-foreground border-t border-border pt-8">
-            <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              <span>Addis Ababa, Ethiopia</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4" />
-              <span>natnaelayele80@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4" />
-              <span>+251935189776</span>
-            </div>
-          </div>
         </div>
       </div>
     </footer>

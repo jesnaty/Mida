@@ -150,47 +150,84 @@ export default function Home() {
         
         {/* Contact Section */}
         <section id="contact" className="py-20 md:py-32 px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Join Waitlist</h2>
-            <p className="text-lg text-muted-foreground mb-12">Be the first to know when we launch</p>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Join Waitlist</h2>
+            <p className="text-lg text-muted-foreground text-center mb-12">Be the first to know when we launch</p>
             
-            <Card className="border-border bg-card">
-              <CardContent className="p-8">
-                <form className="max-w-md mx-auto space-y-6">
-                  <div>
-                    <label htmlFor="waitlist-name" className="block text-sm font-medium mb-2">
-                      Name <span className="text-destructive">*</span>
-                    </label>
-                    <Input id="waitlist-name" type="text" placeholder="Enter your name" required />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="waitlist-phone" className="block text-sm font-medium mb-2">
-                      Phone Number <span className="text-destructive">*</span>
-                    </label>
-                    <Input id="waitlist-phone" type="tel" placeholder="Enter your phone number" required />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="waitlist-address" className="block text-sm font-medium mb-2">
-                      Address <span className="text-destructive">*</span>
-                    </label>
-                    <Input id="waitlist-address" type="text" placeholder="Enter your address" required />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="waitlist-email" className="block text-sm font-medium mb-2">
-                      Email Address <span className="text-destructive">*</span>
-                    </label>
-                    <Input id="waitlist-email" type="email" placeholder="Enter your email" required />
-                  </div>
-                  
-                  <Button type="submit" className="w-full">
-                    Join Waitlist
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <div className="flex flex-col lg:flex-row gap-8 items-start">
+              <div className="lg:w-1/2">
+                <Card className="border-border bg-card h-full">
+                  <CardContent className="p-8">
+                    <h3 className="text-xl font-bold mb-6">Contact Information</h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-3">
+                        <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium">Location</p>
+                          <p className="text-muted-foreground">Addis Ababa, Ethiopia</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium">Email</p>
+                          <p className="text-muted-foreground">natnaelayele80@gmail.com</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium">Phone</p>
+                          <p className="text-muted-foreground">+251935189776</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              
+              <div className="lg:w-1/2">
+                <Card className="border-border bg-card">
+                  <CardContent className="p-8">
+                    <form className="space-y-6">
+                      <div>
+                        <label htmlFor="waitlist-name" className="block text-sm font-medium mb-2">
+                          Name <span className="text-destructive">*</span>
+                        </label>
+                        <Input id="waitlist-name" type="text" placeholder="Enter your name" required />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="waitlist-phone" className="block text-sm font-medium mb-2">
+                          Phone Number <span className="text-destructive">*</span>
+                        </label>
+                        <Input id="waitlist-phone" type="tel" placeholder="Enter your phone number" required />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="waitlist-address" className="block text-sm font-medium mb-2">
+                          Address <span className="text-destructive">*</span>
+                        </label>
+                        <Input id="waitlist-address" type="text" placeholder="Enter your address" required />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="waitlist-email" className="block text-sm font-medium mb-2">
+                          Email Address <span className="text-destructive">*</span>
+                        </label>
+                        <Input id="waitlist-email" type="email" placeholder="Enter your email" required />
+                      </div>
+                      
+                      <Button type="submit" className="w-full">
+                        Join Waitlist
+                      </Button>
+                    </form>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </section>
         
