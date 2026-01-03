@@ -94,6 +94,16 @@ export default function Home() {
             
             <div className="flex flex-col lg:flex-row items-center gap-12">
               <div className="lg:w-1/2">
+                <div className="w-full max-w-3xl mx-auto">
+                  <img 
+                    src="/images/Social Media.png" 
+                    alt="Mida Company" 
+                    className="w-full h-auto rounded-lg shadow-lg object-cover"
+                  />
+                </div>
+              </div>
+              
+              <div className="lg:w-1/2">
                 <div className="prose prose-lg prose-gray max-w-none">
                   <p className="text-xl leading-relaxed mb-8">
                     MIDA is a software and digital marketing company designed to be a growth operating system for startups, SMEs, and enterprises. We combine lean experimentation, scalable systems, and strategic messaging to help businesses validate product‑market fit, accelerate growth, and expand with clarity.
@@ -111,16 +121,6 @@ export default function Home() {
                   <p className="text-xl leading-relaxed mt-8">
                     We are committed to helping businesses grow through innovative solutions and strategic thinking.
                   </p>
-                </div>
-              </div>
-              
-              <div className="lg:w-1/2">
-                <div className="w-full max-w-3xl mx-auto">
-                  <img 
-                    src="/images/Social Media.png" 
-                    alt="Mida Company" 
-                    className="w-full h-auto rounded-lg shadow-lg object-cover"
-                  />
                 </div>
               </div>
             </div>
