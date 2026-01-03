@@ -69,13 +69,7 @@ export default function Home() {
                 custom ERP systems, we deliver everything you need to scale.
               </p>
               
-              <div className="mb-12 max-w-4xl mx-auto">
-                <img 
-                  src="/images/Social Media.png" 
-                  alt="Social Media Marketing" 
-                  className="w-full h-auto rounded-lg shadow-lg object-cover"
-                />
-              </div>
+
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button
@@ -110,6 +104,14 @@ export default function Home() {
                     Our mission is to systematize growth, offering a modular framework that blends software, marketing, and strategy into one backbone for sustainable success. MIDA empowers founders and enterprises to achieve freedom of time, space, and capital while building enduring businesses.
                   </p>
                 </div>
+              </div>
+              
+              <div className="my-12">
+                <img 
+                  src="/images/Social Media.png" 
+                  alt="Mida Company" 
+                  className="w-full max-w-3xl mx-auto h-auto rounded-lg shadow-lg object-cover"
+                />
               </div>
               
               <p className="text-xl leading-relaxed text-center mt-8">
