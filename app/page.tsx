@@ -89,34 +89,40 @@ export default function Home() {
         
         {/* About Section */}
         <section id="about" className="py-20 md:py-32 px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Who We Are</h2>
             
-            <div className="prose prose-lg prose-gray max-w-none">
-              <p className="text-xl leading-relaxed text-center mb-8">
-                MIDA is a software and digital marketing company designed to be a growth operating system for startups, SMEs, and enterprises. We combine lean experimentation, scalable systems, and strategic messaging to help businesses validate product‑market fit, accelerate growth, and expand with clarity.
-              </p>
-              
-              <div className="text-center my-8">
-                <div className="bg-muted/30 rounded-xl p-8 inline-block max-w-2xl w-full border border-border">
-                  <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                  <p className="leading-relaxed">
-                    Our mission is to systematize growth, offering a modular framework that blends software, marketing, and strategy into one backbone for sustainable success. MIDA empowers founders and enterprises to achieve freedom of time, space, and capital while building enduring businesses.
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              <div className="lg:w-1/2">
+                <div className="prose prose-lg prose-gray max-w-none">
+                  <p className="text-xl leading-relaxed mb-8">
+                    MIDA is a software and digital marketing company designed to be a growth operating system for startups, SMEs, and enterprises. We combine lean experimentation, scalable systems, and strategic messaging to help businesses validate product‑market fit, accelerate growth, and expand with clarity.
+                  </p>
+                  
+                  <div className="my-8">
+                    <div className="bg-muted/30 rounded-xl p-8 max-w-2xl w-full border border-border">
+                      <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                      <p className="leading-relaxed">
+                        Our mission is to systematize growth, offering a modular framework that blends software, marketing, and strategy into one backbone for sustainable success. MIDA empowers founders and enterprises to achieve freedom of time, space, and capital while building enduring businesses.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-xl leading-relaxed mt-8">
+                    We are committed to helping businesses grow through innovative solutions and strategic thinking.
                   </p>
                 </div>
               </div>
               
-              <div className="my-12">
-                <img 
-                  src="/images/Social Media.png" 
-                  alt="Mida Company" 
-                  className="w-full max-w-3xl mx-auto h-auto rounded-lg shadow-lg object-cover"
-                />
+              <div className="lg:w-1/2">
+                <div className="w-full max-w-3xl mx-auto">
+                  <img 
+                    src="/images/Social Media.png" 
+                    alt="Mida Company" 
+                    className="w-full h-auto rounded-lg shadow-lg object-cover"
+                  />
+                </div>
               </div>
-              
-              <p className="text-xl leading-relaxed text-center mt-8">
-                We are committed to helping businesses grow through innovative solutions and strategic thinking.
-              </p>
             </div>
           </div>
         </section>
