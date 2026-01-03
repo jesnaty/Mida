@@ -10,16 +10,38 @@ import { ArrowRight } from "lucide-react"
 export function CTASection() {
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Integrate with your backend/database
-    console.log("[v0] Waitlist signup:", email)
+    setError("")
     setSubmitted(true)
-    setTimeout(() => {
+
+    try {
+      const response = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setEmail("")
+        setTimeout(() => {
+          setSubmitted(false)
+        }, 3000)
+      } else {
+        setError(data.message || "Something went wrong. Please try again.")
+        setSubmitted(false)
+      }
+    } catch (err) {
+      console.error("Error submitting waitlist:", err)
+      setError("Failed to submit. Please try again.")
       setSubmitted(false)
-      setEmail("")
-    }, 3000)
+    }
   }
 
   return (
@@ -52,6 +74,9 @@ export function CTASection() {
             </Button>
           </form>
 
+          {error && (
+            <p className="mt-4 text-sm text-red-300">{error}</p>
+          )}
           <p className="mt-6 text-sm text-primary-foreground/60">No spam, ever. Unsubscribe at any time.</p>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { MapPin, Mail, Phone } from "lucide-react"
 
 export function Footer() {
   return (
@@ -90,15 +91,32 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="flex h-6 w-6 items-center justify-center rounded bg-primary">
-              <span className="font-bold text-primary-foreground text-sm">M</span>
+        <div className="pt-8 border-t border-border">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
+            <div className="flex items-center gap-2">
+              <div className="flex h-6 w-6 items-center justify-center rounded bg-primary">
+                <span className="font-bold text-primary-foreground text-sm">M</span>
+              </div>
+              <span className="font-semibold">Mida</span>
             </div>
-            <span className="font-semibold">Mida</span>
-          </div>
 
-          <p className="text-sm text-muted-foreground">© 2025 Mida. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© 2025 Mida. All rights reserved.</p>
+          </div>
+          
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <MapPin className="h-4 w-4" />
+              <span>Addis Ababa, Ethiopia</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="h-4 w-4" />
+              <span>natnaelayele80@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4" />
+              <span>+251935189776</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

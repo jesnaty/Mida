@@ -97,26 +97,28 @@ const signedContracts = [
 export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-white">
-      <DashboardNav />
-      <DashboardSidebar />
-
-      {/* Dashboard Header */}
-      <header className="border-b border-border bg-card ml-64">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
-              <p className="text-muted-foreground">Welcome back! Here's your overview</p>
+      <div className="flex">
+        <DashboardSidebar />
+        <div className="flex-1 flex flex-col">
+          <DashboardNav />
+          
+          {/* Dashboard Header */}
+          <header className="border-b border-border bg-card">
+            <div className="container mx-auto px-4 py-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
+                  <p className="text-muted-foreground">Welcome back! Here's your overview</p>
+                </div>
+                <Button className="bg-primary hover:bg-primary/90">
+                  <DownloadIcon className="mr-2 h-4 w-4" />
+                  Export Report
+                </Button>
+              </div>
             </div>
-            <Button className="bg-primary hover:bg-primary/90">
-              <DownloadIcon className="mr-2 h-4 w-4" />
-              Export Report
-            </Button>
-          </div>
-        </div>
-      </header>
+          </header>
 
-      <main className="container mx-auto px-4 py-8 ml-64">
+          <main className="container mx-auto px-4 py-8 flex-1">
         {/* Analytics Section */}
         <section className="mb-8">
           <h2 className="text-xl font-bold text-foreground mb-4">Analytics Overview</h2>
@@ -306,7 +308,9 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
         </section>
-      </main>
+          </main>
+        </div>
+      </div>
     </div>
   )
 }

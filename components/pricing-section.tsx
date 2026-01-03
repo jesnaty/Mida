@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
+import { DemoRequestDialog } from "@/components/demo-request-dialog"
 
 const tiers = [
   {
@@ -55,13 +56,15 @@ export function PricingSection() {
               </CardContent>
 
               <CardFooter>
-                <Button
-                  className={`w-full ${tier.highlighted ? "bg-primary text-primary-foreground hover:bg-primary/90" : ""}`}
-                  variant={tier.highlighted ? "default" : "outline"}
-                  size="lg"
-                >
-                  {tier.cta}
-                </Button>
+                <DemoRequestDialog>
+                  <Button
+                    className={`w-full ${tier.highlighted ? "bg-primary text-primary-foreground hover:bg-primary/90" : ""}`}
+                    variant={tier.highlighted ? "default" : "outline"}
+                    size="lg"
+                  >
+                    {tier.cta}
+                  </Button>
+                </DemoRequestDialog>
               </CardFooter>
             </Card>
           ))}

@@ -28,13 +28,33 @@ export default function SignupPage() {
 
     setIsLoading(true)
 
-    console.log("[v0] Signup attempt:", { name: formData.name, email: formData.email })
+    try {
+      // Submit to Google Sheets
+      const response = await fetch("/api/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+        }),
+      })
 
-    // Simulate API call
-    setTimeout(() => {
+      const data = await response.json()
+
+      if (data.success) {
+        // Redirect to dashboard after successful signup
+        window.location.href = "/dashboard"
+      } else {
+        alert(data.message || "Signup failed. Please try again.")
+        setIsLoading(false)
+      }
+    } catch (error) {
+      console.error("Signup error:", error)
+      alert("An error occurred. Please try again.")
       setIsLoading(false)
-      window.location.href = "/dashboard"
-    }, 1000)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
