@@ -17,7 +17,7 @@ interface ValueProp {
 }
 
 const ServiceIcon = ({ iconName }: { iconName: string }) => {
-  const iconProps = { className: "h-5 w-5 sm:h-6 sm:w-6 text-primary" };
+  const iconProps = { className: "h-6 w-6 sm:h-7 sm:w-7 text-primary" };
   
   switch (iconName) {
     case "BarChart3": return <BarChart3 {...iconProps} />;
@@ -31,7 +31,7 @@ const ServiceIcon = ({ iconName }: { iconName: string }) => {
 };
 
 const ValueIcon = ({ iconName }: { iconName: string }) => {
-  const iconProps = { className: "h-6 w-6 sm:h-8 sm:w-8 text-primary" };
+  const iconProps = { className: "h-8 w-8 sm:h-10 sm:w-10 text-primary" };
   
   switch (iconName) {
     case "Lightbulb": return <Lightbulb {...iconProps} />;
