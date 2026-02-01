@@ -25,11 +25,15 @@ export function DashboardNav() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-8">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="font-bold text-primary-foreground text-lg">M</span>
-              </div>
-              <span className="font-bold text-foreground text-xl">Mida</span>
+            <Link href="/" className="flex items-center gap-3">
+              <img 
+                src="/2.png" 
+                alt="Theday Digital Logo" 
+                width={32} 
+                height={32} 
+                className="object-contain"
+              />
+              <span className="font-bold text-foreground text-xl">Theday Digital</span>
             </Link>
             <Link
               href="/"

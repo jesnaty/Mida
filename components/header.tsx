@@ -6,11 +6,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <span className="font-bold text-primary-foreground text-lg">M</span>
-          </div>
-          <span className="font-bold text-xl">Mida</span>
+        <Link href="/" className="flex items-center gap-3">
+          <img 
+            src="/2.png" 
+            alt="Theday Digital Logo" 
+            width={40} 
+            height={40} 
+            className="object-contain"
+          />
+          <span className="font-bold text-xl">Theday Digital</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">

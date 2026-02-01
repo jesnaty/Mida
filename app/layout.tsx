@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Mida - Complete Marketing & Software Solutions for SMEs",
+  title: "Theday Digital - Complete Marketing & Software Solutions for SMEs",
   description:
     "Transform your business with integrated marketing and software services. From social media to ERP systems, we help SMEs grow with tiered, affordable solutions.",
   generator: "v0.app",

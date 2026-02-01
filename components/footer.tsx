@@ -74,13 +74,17 @@ export function Footer() {
         </div>
         <div className="pt-8 border-t border-border mt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <div className="flex h-6 w-6 items-center justify-center rounded bg-primary">
-                <span className="font-bold text-primary-foreground text-sm">M</span>
-              </div>
-              <span className="font-semibold">Mida</span>
+            <div className="flex items-center gap-3">
+              <img 
+                src="/2.png" 
+                alt="Theday Digital Logo" 
+                width={24} 
+                height={24} 
+                className="object-contain"
+              />
+              <span className="font-semibold">Theday Digital</span>
             </div>
-            <p className="text-sm text-muted-foreground">© 2025 Mida. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© 2025 Theday Digital. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -32,11 +32,15 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-white">
       <Card className="w-full max-w-md border-border bg-white">
         <CardHeader className="space-y-1">
-          <div className="flex justify-center mb-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <span className="font-bold text-primary-foreground text-xl">M</span>
-              </div>
+          <div className="flex justify-center mb-6">
+            <Link href="/" className="flex items-center gap-3">
+              <img 
+                src="/2.png" 
+                alt="Theday Digital Logo" 
+                width={50} 
+                height={50} 
+                className="object-contain"
+              />
             </Link>
           </div>
           <CardTitle className="text-2xl font-bold text-center">Welcome back</CardTitle>

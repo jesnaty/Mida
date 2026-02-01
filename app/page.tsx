@@ -15,7 +15,7 @@ export default function Home() {
     },
     {
       title: "Branding & Graphic Design",
-      description: "A great brand identity is not only the one by which people recognize you but also something to which people can relate themselves. Your company logo, business card, a website all should tell the story about your brand. At Mida, get your high-quality branding needs fulfilled, which would create an everlasting image of your company in your customer's eyes.",
+      description: "A great brand identity is not only the one by which people recognize you but also something to which people can relate themselves. Your company logo, business card, a website all should tell the story about your brand. At Theday Digital, get your high-quality branding needs fulfilled, which would create an everlasting image of your company in your customer's eyes.",
       icon: Palette
     },
     {
@@ -35,7 +35,7 @@ export default function Home() {
     },
     {
       title: "Campaign Management",
-      description: "At Mida we run top notch campaigns through the digital world and leverage the different tiktok and instagram influencers we manage. We provide the right influencer for your campaign with the set budget you have for your promotional needs.",
+      description: "At Theday Digital we run top notch campaigns through the digital world and leverage the different tiktok and instagram influencers we manage. We provide the right influencer for your campaign with the set budget you have for your promotional needs.",
       icon: DollarSign
     }
   ];
