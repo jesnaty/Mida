@@ -46,9 +46,6 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <ThemeToggle />
-          <Button variant="ghost" className="hidden md:inline-flex" asChild>
-            <Link href="/login">Log in</Link>
-          </Button>
         </div>
       </div>
     </header>
