@@ -17,7 +17,7 @@ interface ValueProp {
 }
 
 const ServiceIcon = ({ iconName }: { iconName: string }) => {
-  const iconProps = { className: "h-6 w-6 text-primary" };
+  const iconProps = { className: "h-5 w-5 sm:h-6 sm:w-6 text-primary" };
   
   switch (iconName) {
     case "BarChart3": return <BarChart3 {...iconProps} />;
@@ -31,7 +31,7 @@ const ServiceIcon = ({ iconName }: { iconName: string }) => {
 };
 
 const ValueIcon = ({ iconName }: { iconName: string }) => {
-  const iconProps = { className: "h-8 w-8 text-primary" };
+  const iconProps = { className: "h-6 w-6 sm:h-8 sm:w-8 text-primary" };
   
   switch (iconName) {
     case "Lightbulb": return <Lightbulb {...iconProps} />;
@@ -139,11 +139,13 @@ export function AnimatedSections({ services, valueProps }: { services: Service[]
                   <CardHeader>
                     <div className="flex items-center gap-3">
                       <motion.div 
-                        className="p-3 rounded-lg bg-primary/10"
+                        className="p-2 sm:p-3 rounded-lg bg-primary/10"
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
-                        <ServiceIcon iconName={service.icon} />
+                        <div className="flex items-center justify-center">
+                          <ServiceIcon iconName={service.icon} />
+                        </div>
                       </motion.div>
                       <CardTitle className="text-xl">{service.title}</CardTitle>
                     </div>
@@ -183,11 +185,13 @@ export function AnimatedSections({ services, valueProps }: { services: Service[]
                 whileHover={{ y: -10 }}
               >
                 <motion.div 
-                  className="inline-flex p-4 rounded-full bg-primary/10 mb-4"
+                  className="inline-flex p-3 sm:p-4 rounded-full bg-primary/10 mb-4"
                   whileHover={{ scale: 1.1, rotate: [0, 10, -10, 0] }}
                   transition={{ duration: 0.3 }}
                 >
-                  <ValueIcon iconName={prop.icon} />
+                  <div className="flex items-center justify-center">
+                    <ValueIcon iconName={prop.icon} />
+                  </div>
                 </motion.div>
                 <motion.h3 
                   className="text-xl font-semibold mb-2"

@@ -92,7 +92,7 @@ export function AnimatedContact() {
                     type="submit"
                   >
                     Send Message
-                    <Send className="ml-2 h-4 w-4" />
+                    <Send className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
                   </motion.button>
                 </form>
               </CardContent>
@@ -110,8 +110,8 @@ export function AnimatedContact() {
               className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300"
               whileHover={{ x: 10 }}
             >
-              <div className="p-3 rounded-lg bg-primary/10">
-                <Mail className="h-6 w-6 text-primary" />
+              <div className="p-2 sm:p-3 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Email Us</h3>
@@ -123,8 +123,8 @@ export function AnimatedContact() {
               className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300"
               whileHover={{ x: 10 }}
             >
-              <div className="p-3 rounded-lg bg-primary/10">
-                <Phone className="h-6 w-6 text-primary" />
+              <div className="p-2 sm:p-3 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Call Us</h3>
@@ -136,8 +136,8 @@ export function AnimatedContact() {
               className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300"
               whileHover={{ x: 10 }}
             >
-              <div className="p-3 rounded-lg bg-primary/10">
-                <MapPin className="h-6 w-6 text-primary" />
+              <div className="p-2 sm:p-3 rounded-lg bg-primary/10 flex items-center justify-center">
+                <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Visit Us</h3>
